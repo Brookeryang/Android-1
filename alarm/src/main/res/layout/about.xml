@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/about_title"/>
+    <TextView
+        android:text="1.进行闹钟设置之前请先添加目的地"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <TextView
+        android:text="2.设置后台导航之后请点击右上角的刷新位置"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <TextView
+        android:text="3.闹钟响起时请点击相应的关闭闹钟按钮来进入下一个目的地,如果已经到达最终目的地,请退出程序"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <TextView
+        android:text="4.可以开始模拟导航来判断目的地的正确性"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <TextView
+        android:text="5.如果出现导航界面加载失败,请检查网络或者重新输入目的地信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+    <TextView
+        android:text="6.闹钟会在到达目的地时响起,暂时不支持更改闹钟铃声"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+</LinearLayout>
