@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="9dp"
+  android:layout_marginRight="9dp"
+  android:layout_marginTop="12dp"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+      android:id="@+id/collect_pic"
+      android:layout_width="136dp"
+      android:layout_height="100dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/pic_default" />
+
+    <TextView
+      android:id="@+id/collect_dish"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_marginTop="4dp"
+      android:layout_toRightOf="@+id/collect_pic"
+      android:textColor="@color/baby"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+    <View
+      android:id="@+id/line"
+      android:layout_width="match_parent"
+      android:layout_height="4dp"
+      android:layout_alignLeft="@+id/collect_dish"
+      android:layout_alignRight="@+id/collect_dish"
+      android:layout_below="@+id/collect_dish"
+      android:layout_marginTop="5dp"
+      android:background="@color/line" />
+
+    <TextView
+      android:id="@+id/collect_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/line"
+      android:layout_marginLeft="8dp"
+      android:layout_marginTop="18dp"
+      android:layout_toRightOf="@+id/collect_pic"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:textColor="@color/black_textcolor"
+      android:textSize="14sp" />
+  </RelativeLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#f3f3f5" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+      android:id="@+id/collect_pic1"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:src="@drawable/pic_small_default" />
+
+    <ImageView
+      android:id="@+id/collect_pic2"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:layout_marginLeft="8dp"
+      android:src="@drawable/pic_small_default" />
+
+    <ImageView
+      android:id="@+id/collect_pic3"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:layout_marginLeft="8dp"
+      android:src="@drawable/pic_small_default" />
+
+    <ImageView
+      android:id="@+id/collect_pic4"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:layout_marginLeft="8dp"
+      android:src="@drawable/pic_small_default" />
+  </LinearLayout>
+
+
+</LinearLayout>

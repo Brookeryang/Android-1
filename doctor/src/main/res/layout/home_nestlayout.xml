@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.maqiang.doctor.view.RootNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/nest"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+  >
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+      android:id="@+id/hint"
+      android:text="@string/hint"
+      android:textSize="14sp"
+      android:textColor="@color/text_gray"
+      android:layout_width="wrap_content"
+      android:gravity="center_vertical"
+      android:layout_height="50dp"
+      android:layout_marginLeft="9dp"
+      />
+    <TextView
+      android:id="@+id/update_article"
+      android:text="换一换"
+      android:textSize="14sp"
+      android:textColor="@color/text_gray"
+      android:gravity="center"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="9dp"/>
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/recycler_article"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/hint">
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+      android:id="@+id/progress"
+      android:indeterminateTint="@color/appbar_bg"
+      android:indeterminateTintMode="src_atop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/hint"/>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="9dp"
+      android:layout_marginLeft="9dp"
+      android:layout_below="@+id/recycler_article">
+      <include layout="@layout/home_nested_second_page" />
+    </LinearLayout>
+
+  </RelativeLayout>
+</com.maqiang.doctor.view.RootNestedScrollView>

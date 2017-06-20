@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@color/white">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="25dp"
+      android:orientation="vertical">
+      <TextView
+        android:text="今日"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        />
+      <ImageView
+        android:src="@drawable/todayline"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+      <com.maqiang.doctor.view.TextViewVertical
+        app:v_start="right"
+        app:v_text="@string/text"
+        app:v_textSize="15sp"
+        app:v_textColor="#fce3e6"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cic">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/iv_circle"
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:layout_centerInParent="true"
+          android:src="@drawable/asc" />
+        <ImageView
+          android:id="@+id/iv_camera"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:background="@drawable/camera_circle"
+          android:scaleType="center"
+          android:src="@drawable/camrea"
+          android:layout_alignParentBottom="true"
+          android:layout_marginRight="4dp"
+          android:layout_alignEnd="@+id/iv_circle"
+          android:clickable="true"
+          />
+      </RelativeLayout>
+
+
+    </RelativeLayout>
+  </LinearLayout>
+
+
+</FrameLayout>

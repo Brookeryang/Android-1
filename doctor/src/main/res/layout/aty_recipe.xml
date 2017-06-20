@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@color/bg"
+  android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/white"
+    />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="@string/today_recipe"
+        android:textColor="@color/black_textcolor"
+        android:textSize="16sp" />
+
+      <TextView
+        android:id="@+id/tv_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/breakfast"
+        android:textColor="@color/white"
+        android:background="@drawable/oval"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="20dp"/>
+      <TextView
+        android:id="@+id/tv_lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/lunch"
+        android:textColor="@color/black_textcolor"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="5dp"
+        />
+      <TextView
+        android:id="@+id/tv_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/dinner"
+        android:textColor="@color/black_textcolor"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="5dp"
+       />
+
+      <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/black_textcolor"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="5dp"
+       />
+    </LinearLayout>
+    <ImageView
+      android:id="@+id/divder"
+      android:src="@drawable/checkbarline"
+      android:layout_width="match_parent"
+      android:scaleType="fitXY"
+      android:layout_height="wrap_content" />
+    <EditText
+      android:id="@+id/et_recipe"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="85dp"
+      android:background="@null"
+      android:hint="@string/recipe_hint"
+      android:textColorHint="#c7c7c7"
+      android:textCursorDrawable="@null"
+      android:textSize="15sp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="@string/advice"
+        android:textColor="@color/black_textcolor"
+        android:textSize="16sp" />
+
+      <TextView
+        android:id="@+id/add_check"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/add_check_item"
+        android:textColor="@color/white"
+        android:background="@drawable/oval"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <ImageView
+      android:src="@drawable/checkbarline"
+      android:layout_width="match_parent"
+      android:scaleType="fitXY"
+      android:layout_height="wrap_content" />
+
+    <EditText
+      android:id="@+id/et_advice"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@null"
+      android:hint="@string/advice_hint"
+      android:minHeight="85dp"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
+      android:textColorHint="#c7c7c7"
+      android:textCursorDrawable="@null"
+      android:textSize="15sp" />
+
+    <ImageView
+      android:src="@drawable/checkbarline"
+      android:layout_width="match_parent"
+      android:scaleType="fitXY"
+      android:layout_height="wrap_content" />
+    <com.google.android.flexbox.FlexboxLayout
+      android:id="@+id/flexbox"
+      android:layout_width="match_parent"
+      app:flexDirection="row"
+      app:alignContent="flex_start"
+      app:alignItems="flex_start"
+      app:flexWrap="wrap"
+      android:padding="4dp"
+      android:layout_gravity="center_vertical"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:src="@drawable/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        />
+
+    </com.google.android.flexbox.FlexboxLayout>
+  </LinearLayout>
+
+</LinearLayout>

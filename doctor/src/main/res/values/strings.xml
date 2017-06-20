@@ -1,0 +1,193 @@
+<resources>
+  <string name="app_name">脐宝</string>
+
+  <string name="register_titile">注册</string>
+  <string name="found_title">找回密码</string>
+  <string name="confirm_pwd">新密码</string>
+  <string name="confirm_one">请输入新密码</string>
+  <string name="confirm_two">请再次输入新密码</string>
+  <string name="register_bt">立即注册</string>
+  <string name="next">下一步</string>
+  <string name="login_bt">立即登录</string>
+  <string name="found_pwd">立即找回</string>
+  <string name="new_user">新用户注册</string>
+  <string name="forget_pwd">忘记密码</string>
+  <string name="username">请输入账号(手机号)</string>
+  <string name="password">请输入密码</string>
+  <string name="password2">请再次输入密码</string>
+  <string name="phone_number">请输入手机号</string>
+  <string name="phone_code">请输入验证码</string>
+  <string name="get_code">获取验证码</string>
+  <string name="second_code">%s秒可重发</string>
+
+  <string name="bottom_bar_discover">发现</string>
+  <string name="bottom_bar_cookbook">食谱</string>
+  <string name="bottom_bar_calendar">医嘱</string>
+  <string name="bottom_bar_my">我的</string>
+  <string name="bottom_bar_search">搜索</string>
+  <string name="bottom_bar_home">首页</string>
+
+  <string name="breakfast">早餐</string>
+  <string name="lunch">午餐</string>
+  <string name="dinner">晚餐</string>
+  <string name="add">加餐</string>
+
+  <string name="breakfast_item">早餐 %1$s</string>
+  <string name="lunch_item">午餐 %1$s</string>
+  <string name="dinner_item">晚餐 %1$s</string>
+  <string name="add_item">加餐 %1$s</string>
+  <string name="doctor">医生:%1$s</string>
+  <string name="check">检查项目:%1$s</string>
+  <string name="doctor_speek">医嘱:%1$s</string>
+  <string name="remark_item">我的备注:%1$s</string>
+
+  <string name="save_data_succeed">保存成功</string>
+  <string name="save_data_failed">保存失败</string>
+
+  <string name="login_succeed">登录成功</string>
+  <string name="login_failed">登录失败</string>
+
+  <string name="register_succeed">注册成功</string>
+  <string name="register_failed">注册失败,请重新尝试</string>
+
+  <string name="code_sending">验证码正在发送</string>
+  <string name="code_sent_failed">验证码请求失败</string>
+
+  <string name="data_succeed">数据更新成功</string>
+  <string name="data_failed">数据更新失败</string>
+
+  <string name="date_none">今日暂无记录</string>
+
+  <string-array name="eat">
+    <item>早餐</item>
+    <item>午餐</item>
+    <item>晚餐</item>
+    <item>加餐</item>
+  </string-array>
+
+  <string-array name="info">
+    <item>老人健康</item>
+    <item>孩子健康</item>
+    <item>健康饮食</item>
+    <item>男性健康</item>
+    <item>女性保养</item>
+    <item>孕婴手册</item>
+    <item>私密生活</item>
+    <item>育儿宝典</item>
+    <item>心里健康</item>
+    <item>四季养生</item>
+    <item>减肥健身</item>
+    <item>医疗护理</item>
+    <item>夫妻情感</item>
+  </string-array>
+
+  <string-array name="check_item">
+    <item>建母子健康档案</item>
+    <item>血常规</item>
+    <item>尿常规</item>
+    <item>宫高</item>
+    <item>腹围</item>
+    <item>胎心</item>
+    <item>血压</item>
+    <item>体重</item>
+    <item>排除宫外孕</item>
+    <item>排除葡萄胎</item>
+    <item>排除流产</item>
+    <item>检查卵黄囊</item>
+    <item>绒毛膜采样</item>
+    <item>检查甲状腺/乳房/骨盆</item>
+    <item>黑白B超监测/看胚胎数</item>
+    <item>胎儿颈部透明带筛检</item>
+    <item>唐氏症筛检</item>
+    <item>羊膜穿刺</item>
+    <item>四维彩超胎儿畸形筛查</item>
+    <item>妊娠糖尿病筛检</item>
+    <item>乙型肝炎抗原</item>
+    <item>梅毒血清试验</item>
+    <item>骨盆测量</item>
+    <item>胎位检查</item>
+    <item>B 超</item>
+    <item>下肢水肿/子痫前症筛检</item>
+    <item>指导准妈妈自数胎动</item>
+    <item>评估胎儿体重</item>
+    <item>肝功有异常者复查肝功</item>
+    <item>查血凝四项</item>
+    <item>胎儿心电图</item>
+    <item>胎心监测</item>
+    <item>决定分娩方式</item>
+    <item>指导准妈妈随诊（如腹痛、见红、阴道流液）</item>
+    <item>了解生产流程</item>
+    <item>勤练拉玛泽呼吸法</item>
+  </string-array>
+
+  <string-array name="advoid">
+    <item>少食</item>
+    <item>过敏</item>
+    <item>刺激</item>
+    <item>酸性</item>
+    <item>含糖高</item>
+    <item>含盐量高</item>
+    <item>其他</item>
+  </string-array>
+
+  <string-array name="item">
+    <item>早餐 - 空腹</item>
+    <item>早餐 - 餐后</item>
+    <item>午餐 - 空腹</item>
+    <item>午餐 - 餐后</item>
+    <item>晚餐 - 空腹</item>
+    <item>晚餐 - 餐后</item>
+    <item>睡前 - 晚安</item>
+  </string-array>
+
+
+  <string name="record_recipe">记录食谱</string>
+  <string name="record_advice">记录医嘱</string>
+  <string name="blood_total">血糖统计</string>
+  <string name="blood">血糖</string>
+  <string name="avoid">忌口</string>
+  <string name="word">我</string>
+  <string name="text">听说你萌造了我？嘿嘿那么日后请多指教！宝宝的生长情况从第二周开始更新哦~</string>
+  <string name="album">相册</string>
+  <string name="question">问题描述</string>
+  <string name="record_question">%1$d/140</string>
+  <string name="submit">提交</string>
+
+  <string name="hint">为你推荐</string>
+  <string name="remark_hint">拖动添加备注</string>
+  <string name="blood_table">血糖统计图</string>
+
+  <string name="recipe_hint">在这里记录食谱哦~</string>
+  <string name="recipe_none">您还未记录食谱.</string>
+  <string name="advice_hint">在这里记录医嘱哦~</string>
+  <string name="advice_none">您还未记录医嘱.</string>
+  <string name="today_recipe">今日食谱</string>
+  <string name="advice">医嘱备注</string>
+  <string name="add_check_item">添加检查项目</string>
+  <string name="user_none">小仙女</string>
+  <string name="city_none">火星</string>
+  <string name="age_none">永远18</string>
+  <string name="none">未知</string>
+  <string name="duedate">预产期:%1$s</string>
+  <string name="age">%1$d岁</string>
+  <string name="record">收藏</string>
+  <string name="help">帮助与反馈</string>
+  <string name="search">搜索</string>
+  <string name="plus">添加忌口</string>
+  <string name="all">全部</string>
+  <string name="sharetoweixin">分享至微信</string>
+  <string name="normal_value">正常值</string>
+  <string name="low_value">低血糖</string>
+  <string name="h_value">高血糖</string>
+  <string name="edit">编辑个人信息</string>
+  <string name="pre">预产期(格式:yyyy-mm-dd)</string>
+
+  <string name="product_done">感谢一路相伴~  ❤ (≧▽≦)/~</string>
+  <string name="undata">哼哼麻麻不填写我的预产期我要有小情绪了，宝宝不说，就让你猜~</string>
+
+  <string name="avoid_none">暂时无忌口,请在右上角进行添加</string>
+  <string name="collect_none">暂无收藏文章</string>
+  <string name="blood_none">暂无血糖数据,请按时记录</string>
+  <string name="blood_exception">%1$s 血糖值: %2$2.2fmmol/L %3$s</string>
+  
+</resources>

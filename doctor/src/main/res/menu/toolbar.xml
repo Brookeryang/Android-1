@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/add_blood"
+    android:title="记录血糖"
+    android:icon="@drawable/measure"
+    app:showAsAction="always"
+    />
+</menu>

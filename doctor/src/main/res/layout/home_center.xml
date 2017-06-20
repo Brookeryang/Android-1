@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="200dp"
+  android:background="@color/white"
+  android:paddingLeft="50dp"
+  android:paddingTop="30dp">
+  <ImageView
+    android:id="@+id/iv_blood"
+    android:src="@drawable/blood"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+  <ImageView
+    android:id="@+id/iv_food"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/food"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+  <ImageView
+    android:id="@+id/iv_cookbook"
+    android:src="@drawable/cookbook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="50dp"
+    />
+  <ImageView
+    android:id="@+id/trend"
+    android:src="@drawable/high"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:scaleType="center"
+    android:layout_below="@+id/iv_blood"
+    android:layout_alignLeft="@+id/iv_blood"
+    android:layout_alignRight="@+id/iv_blood"
+    android:layout_marginTop="20dp"/>
+
+  <TextView
+    android:text="@string/blood"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/trend"
+    android:layout_alignLeft="@+id/trend"
+    android:layout_alignRight="@+id/trend"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:id="@+id/textView" />
+
+  <TextView
+    android:id="@+id/tv_number"
+    android:text="9"
+    android:textStyle="bold"
+    android:textSize="23sp"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:layout_below="@+id/iv_food"
+    android:layout_alignLeft="@+id/iv_food"
+    android:layout_alignRight="@+id/iv_food"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    />
+  <TextView
+    android:text="@string/avoid"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_number"
+    android:layout_alignLeft="@+id/tv_number"
+    android:layout_alignRight="@+id/tv_number"
+    android:layout_marginTop="10dp"
+    android:gravity="center"/>
+
+  <TextView
+    android:id="@+id/tv_number_cookbook"
+    android:text="25"
+    android:textStyle="bold"
+    android:textSize="23sp"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:layout_below="@+id/iv_cookbook"
+    android:layout_alignLeft="@+id/iv_cookbook"
+    android:layout_alignRight="@+id/iv_cookbook"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+
+    />
+    <TextView
+      android:text="千卡"
+      android:textSize="12sp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/textView"
+      android:layout_toRightOf="@+id/tv_number_cookbook"
+      android:layout_alignTop="@+id/tv_number_cookbook"
+      android:layout_alignBottom="@+id/tv_number_cookbook"
+      android:gravity="left|bottom"/>
+  <TextView
+    android:text="@string/bottom_bar_cookbook"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_number_cookbook"
+    android:layout_alignLeft="@+id/tv_number_cookbook"
+    android:layout_alignRight="@+id/iv_cookbook"
+    android:layout_marginTop="10dp"
+    android:gravity="center"/>
+
+
+
+</RelativeLayout>

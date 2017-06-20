@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="20dp"
+  android:background="@color/white"
+  xmlns:tools="http://schemas.android.com/tools">
+  <ImageView
+    android:id="@+id/iv_collect"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentRight="true"
+    android:scaleType="fitXY"
+    android:src="@drawable/share_default"/>
+  <TextView
+    tools:text="@string/text"
+    android:textColor="@color/black_textcolor"
+    android:textSize="15sp"
+    android:id="@+id/tv_collect_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/iv_collect"
+    android:layout_marginRight="20dp"
+    android:maxLines="2"
+    android:ellipsize="end"/>
+  <TextView
+    android:id="@+id/tv_collect_content"
+    tools:text="@string/text"
+    android:textColor="@color/text_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/iv_collect"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:maxLines="3"
+    android:ellipsize="end"
+    android:layout_below="@+id/tv_collect_title"
+    />
+
+</RelativeLayout>

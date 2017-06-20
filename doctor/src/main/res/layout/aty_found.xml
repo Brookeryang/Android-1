@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <include layout="@layout/commonbar" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp">
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/phone_number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      >
+
+      <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+      android:id="@+id/bt_getcode"
+      android:layout_width="wrap_content"
+      android:layout_height="35dp"
+      android:layout_alignRight="@+id/phone_number"
+      android:layout_marginTop="12dp"
+      android:background="@color/appbar_bg"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:text="@string/get_code"
+      android:textColor="@color/white" />
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/phone_number"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      android:layout_marginTop="10dp"
+     >
+
+      <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_code"
+        android:inputType="number"
+        android:maxEms="6"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/password1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/password"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      android:layout_marginTop="10dp"
+      app:passwordToggleEnabled="true">
+
+      <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/password2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/password1"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      android:layout_marginTop="10dp"
+      app:passwordToggleEnabled="true">
+
+      <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password2"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+  </RelativeLayout>
+
+
+  <Button
+    android:id="@+id/found_bt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/bt_default"
+    android:text="@string/found_pwd"
+    android:textColor="@color/white"
+    android:enabled="false"/>
+</LinearLayout>

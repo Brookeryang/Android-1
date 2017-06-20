@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/transparent">
+  <TextView
+    android:id="@+id/tv_timetstart"
+    android:text="计时"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:gravity="center"
+    android:background="@drawable/timestart"
+    android:layout_centerInParent="true"
+    />
+
+  <TextView
+    android:text="餐后2小时提醒测血糖"
+    android:textColor="@color/text_gray"
+    android:textSize="14sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_timetstart"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="36dp" />
+</RelativeLayout>

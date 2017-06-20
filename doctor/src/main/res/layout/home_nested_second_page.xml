@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/blood_hint"
+    android:text="@string/blood_table"
+    android:textSize="14dp"
+    android:textColor="@color/text_gray"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+  <include layout="@layout/pictures"/>
+
+  <!--<LinearLayout-->
+    <!--android:id="@+id/blood_tag"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginTop="20dp">-->
+    <!--<View-->
+      <!--android:layout_width="40dp"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:background="@color/l_blood"/>-->
+
+    <!--<TextView-->
+      <!--android:text="@string/low_value"-->
+      <!--android:textSize="12sp"-->
+      <!--android:gravity="center_vertical"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<View-->
+      <!--android:layout_width="40dp"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:background="@color/blood_bg"-->
+      <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<TextView-->
+      <!--android:text="@string/normal_value"-->
+      <!--android:textSize="12sp"-->
+      <!--android:gravity="center_vertical"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<View-->
+      <!--android:layout_width="40dp"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:background="@color/h_blood"-->
+      <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<TextView-->
+      <!--android:text="@string/h_value"-->
+      <!--android:textSize="12sp"-->
+      <!--android:gravity="center_vertical"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="20dp"-->
+      <!--android:layout_marginLeft="10dp"/>-->
+
+  <!--</LinearLayout>-->
+  <LinearLayout
+    android:id="@+id/blood_exception"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+  </LinearLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+    android:background="@color/bg"/>
+
+  <include layout="@layout/recipe_item"/>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+    android:background="@color/bg"/>
+
+  <include layout="@layout/advice_item" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/bg"/>
+</LinearLayout>

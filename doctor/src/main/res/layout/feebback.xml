@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="13dp"
+  >
+  <EditText
+    android:id="@+id/et_question"
+    android:hint="@string/question"
+    android:textColorHint="@color/hint"
+    android:textColor="@color/toolbar_textcolor"
+    android:textSize="17sp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="start"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="20dp"
+    android:maxLength="140"
+    android:background="@color/white"/>
+  <TextView
+    android:id="@+id/tv_number_tips"
+    android:text="@string/record_question"
+    android:textColor="@color/unclickable"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/et_question"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dp"
+    />
+
+  <Button
+    android:id="@+id/bt_submit"
+    android:text="@string/submit"
+    android:textColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/unclickable"
+    android:layout_below="@+id/tv_number_tips"
+    android:layout_marginTop="20dp"
+    />
+</RelativeLayout>

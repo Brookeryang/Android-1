@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <include layout="@layout/commonbar" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp">
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/phone_number"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      >
+      <android.support.design.widget.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+         />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+      android:id="@+id/bt_getcode"
+      android:layout_width="wrap_content"
+      android:layout_height="35dp"
+      android:layout_alignRight="@+id/phone_number"
+      android:layout_marginTop="12dp"
+      android:background="@color/appbar_bg"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:text="@string/get_code"
+      android:textColor="@color/white" />
+
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/phone_number"
+      android:layout_marginTop="20dp"
+      android:textColorHint="@color/hint"
+      android:textColor="@color/black_textcolor"
+      app:passwordToggleEnabled="false">
+
+      <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_code"
+        android:inputType="number"
+        android:maxLines="1"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+  </RelativeLayout>
+
+  <Button
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@color/bt_default"
+    android:text="@string/next"
+    android:textColor="@color/white"
+    android:enabled="false"
+    />
+
+</LinearLayout>

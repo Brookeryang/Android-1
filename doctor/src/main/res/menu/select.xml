@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/action_open"
+    android:orderInCategory="100"
+    android:title="全部"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_new"
+    android:orderInCategory="100"
+    android:title="正常孕妇"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_del"
+    android:orderInCategory="100"
+    android:title="特殊孕妇"
+    app:showAsAction="never"/>
+</menu>

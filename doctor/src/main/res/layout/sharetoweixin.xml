@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="266dp"
+  android:layout_height="wrap_content"
+ >
+  <ImageView
+    android:id="@+id/share_bg"
+    android:layout_width="266dp"
+    android:layout_height="240dp"
+    android:src="@drawable/share_default"
+    android:scaleType="fitXY"/>
+  <ImageView
+    android:id="@+id/share_camera"
+    android:src="@drawable/camrea_mid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/share_bg"
+    />
+
+  <TextView
+    android:text="@string/text"
+    android:textSize="12sp"
+    android:textColor="@color/black_textcolor"
+    android:layout_width="266dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/share_bg"
+    android:lineSpacingExtra="3dp"
+    android:padding="15dp"/>
+
+  <TextView
+    android:id="@+id/tv_share"
+    android:text="@string/sharetoweixin"
+    android:textSize="15sp"
+    android:textColor="@color/baby"
+    android:gravity="center"
+    android:layout_width="266dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/share_bg"
+    android:background="@color/white"
+    android:layout_marginTop="60dp"/>
+
+</RelativeLayout>

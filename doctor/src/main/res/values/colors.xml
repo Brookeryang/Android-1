@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorPrimaryDark">#4caf50</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_click">#388e3c</color>
+    <color name="white">#ffffff</color>
+    <color name="yello">#98f404</color>
+    <color name="lines">#fbc36e</color>
+    <color name="point">#fa5301</color>
+    <color name="divider_color">#868686</color>
+    <color name="tag">#738aaa</color>
+    <color name="tag1">#c0cedb</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="cpb_color">#ff670b</color>
+    <color name="cpb_bg">#f0d8d6</color>
+    <color name="circle_bg">#f67558</color>
+
+    <color name="album_bar">#262a2d</color>
+    <color name="toolbar_textcolor">#6d6d6f</color>
+    <color name="text_title">#3b3b3b</color>
+    <color name="text_gray">#969698</color>
+    <color name="feedback">#f6f6f6</color>
+    <color name="bg">#f3f3f5</color>
+    <color name="hint">#9e9e9e</color>
+    <color name="remark_textcolor">#c1c1c3</color>
+    <color name="black_textcolor">#545454</color>
+    <color name="check_textcolor">#5d5d5d</color>
+    <color name="unclickable">#dadada</color>
+    <color name="help">#f15b4a</color>
+    <color name="appbar_bg">#f15c48</color>
+    <color name="baby">#ef5d44</color>
+    <color name="line">#f79e8c</color>
+    <color name="blood_bg">#c4d0de</color>
+
+    <color name="l_blood">#8e73ff</color>
+    <color name="h_blood">#fb8180</color>
+    <color name="bt_default">#d9d9d9</color>
+</resources>
