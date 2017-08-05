@@ -84,6 +84,7 @@ import com.maqiang.doctor.view.RootNestedScrollView;
 import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.opensdk.modelmsg.WXImageObject;
 import com.tencent.mm.opensdk.modelmsg.WXMediaMessage;
+import com.tencent.mm.opensdk.modelmsg.WXTextObject;
 import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
@@ -658,25 +659,37 @@ public class HomePagerFragment extends Fragment implements BaseRecyclerAdapter.O
           // TODO: 2017/5/31 微信分享
           dialog.dismiss();
           regTowx();
-          Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.add);
+          //Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.add);
+          //
+          //WXImageObject wxImageObject = new WXImageObject(bitmap);
+          //WXMediaMessage mediaMessage = new WXMediaMessage();
+          //mediaMessage.mediaObject = wxImageObject;
+          //
+          ////设置微缩图
+          //Bitmap bm = Bitmap.createScaledBitmap(bitmap,120,120,true);
+          //bitmap.recycle();
+          //mediaMessage.thumbData = com.maqiang.doctor.utils.Util.bitmapToByteArray(bm);
+          //
+          //SendMessageToWX.Req req = new SendMessageToWX.Req();
+          //req.transaction = BmobManager.getToday()+System.currentTimeMillis();
+          //req.message = mediaMessage;
+          //req.scene = SendMessageToWX.Req.WXSceneTimeline;
+          //
+          //api.sendReq(req);
+          //
+          //ToastUtils.show(api.sendReq(req)+"");
 
-          WXImageObject wxImageObject = new WXImageObject(bitmap);
+          WXTextObject textObject = new WXTextObject();
+          textObject.text = "hello";
           WXMediaMessage mediaMessage = new WXMediaMessage();
-          mediaMessage.mediaObject = wxImageObject;
-
-          //设置微缩图
-          Bitmap bm = Bitmap.createScaledBitmap(bitmap,120,120,true);
-          bitmap.recycle();
-          mediaMessage.thumbData = com.maqiang.doctor.utils.Util.bitmapToByteArray(bm);
-
+          mediaMessage.mediaObject = textObject;
+          mediaMessage.description = "hello";
           SendMessageToWX.Req req = new SendMessageToWX.Req();
           req.transaction = BmobManager.getToday()+System.currentTimeMillis();
           req.message = mediaMessage;
           req.scene = SendMessageToWX.Req.WXSceneTimeline;
 
           api.sendReq(req);
-
-          ToastUtils.show(api.sendReq(req)+"");
 
         }
       });

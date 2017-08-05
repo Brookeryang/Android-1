@@ -52,12 +52,13 @@ public class HomeActivity extends AppCompatActivity {
     mUser = BmobUser.getCurrentUser(User.class);
     if (mUser == null) {
       goToLoginAty();
+    }else {
+      if (MyApplication.getInstance().getPassword() != null) {
+        mUser.setPassword(MyApplication.getInstance().getPassword());
+        BmobManager.login(mUser, mHandler);
+      }
+      init();
     }
-    if (MyApplication.getInstance().getPassword() != null) {
-      mUser.setPassword(MyApplication.getInstance().getPassword());
-    }
-    BmobManager.login(mUser, mHandler);
-    init();
   }
 
   private void goToLoginAty() {

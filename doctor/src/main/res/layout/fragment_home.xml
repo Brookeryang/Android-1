@@ -100,7 +100,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:src="@drawable/share"
-            android:visibility="invisible"
             />
 
           <TextView
